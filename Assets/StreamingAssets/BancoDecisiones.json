@@ -1,0 +1,87 @@
+[
+  {
+    "ruta": "1",
+    "preguntas": [
+      {
+        "enunciado": "¿Enunciado ruta 1?",
+        "respuestas": [
+          { "eleccion": "ruta 1-1" },
+          { "eleccion": "ruta 1-2" }
+        ],
+      }
+    ]
+  },
+  {
+    "ruta": "1-1",
+    "preguntas": [
+      {
+        "enunciado": "¿Enunciado ruta 1-1?",
+        "respuestas": [
+          { "eleccion": "ruta 1-1-1" },
+          { "eleccion": "ruta 1-1-2" }
+        ],
+      }
+    ]
+  },
+  {
+    "ruta": "1-1-1",
+    "preguntas": [
+      {
+        "enunciado": "¿Enunciado ruta 1-1-1?",
+        "respuestas": [
+          { "eleccion": "ruta 1-1-1-1" },
+          { "eleccion": "ruta 1-1-1-2" }
+        ],
+      }
+    ]
+  },
+  {
+    "ruta": "1-1-2",
+    "preguntas": [
+      {
+        "enunciado": "¿Enunciado ruta 1-1-2?",
+        "respuestas": [
+          { "eleccion": "ruta 1-1-2-1" },
+          { "eleccion": "ruta 1-1-2-2" }
+        ],
+      }
+    ]
+  },
+  {
+    "ruta": "1-2",
+    "preguntas": [
+      {
+        "enunciado": "¿Enunciado ruta 1-2?",
+        "respuestas": [
+          { "eleccion": "ruta 1-2-1" },
+          { "eleccion": "ruta 1-2-2" }
+        ],
+      }
+    ]
+  },
+  {
+    "ruta": "1-2-1",
+    "preguntas": [
+      {
+        "enunciado": "¿Enunciado ruta 1-2-1?",
+        "respuestas": [
+          { "eleccion": "ruta 1-2-1-1" },
+          { "eleccion": "ruta 1-2-1-2" }
+        ],
+      }
+    ]
+  },
+  {
+    "ruta": "1-2-2",
+    "preguntas": [
+      {
+        "enunciado": "¿Enunciado ruta 1-2-2?",
+        "respuestas": [
+          { "eleccion": "ruta 1-2-2-1" },
+          { "eleccion": "ruta 1-2-2-2" }
+        ],
+      }
+    ]
+  }
+
+]
