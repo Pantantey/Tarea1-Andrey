@@ -6,6 +6,5 @@ using UnityEngine;
 public class Decision
 {
     public string enunciado;
-    public Eleccion[] respuestas;
-    public int rutaElegida;
+    public Eleccion[] elecciones;
 }

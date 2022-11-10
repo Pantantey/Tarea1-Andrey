@@ -11,20 +11,19 @@ public class Juego : MonoBehaviour
 {
     public Ruta[] bancoDecisiones;
     public TextMeshProUGUI enunciado;
-    public TextMeshProUGUI[] respuestas;
-    public int ruta;
-    public Decision rutaActual;
-
-    private int rutaSeleccionada = 0;
+    public TextMeshProUGUI[] elecciones;
     
-
+    public Decision decisionActual;
     public Button[] btnEleccion;
 
+    public string rutaActual;
+    public bool final;
 
     // Start is called before the first frame update
     void Start()
     {
-        ruta = 0;
+        final = false;
+        rutaActual = "1";
         cargarBancoDecisiones();
         setDecision();
     }
@@ -47,13 +46,47 @@ public class Juego : MonoBehaviour
 
     public void setDecision()
     {
-        //int rutaSeleccionada = 0;
-
-        rutaActual = bancoDecisiones[ruta].preguntas[rutaSeleccionada];
-        enunciado.text = rutaActual.enunciado;
-        for (int i = 0; i < respuestas.Length; i++)
+        
+        for (int i = 0; i <= bancoDecisiones.Length-1; i++)
         {
-            respuestas[i].text = rutaActual.respuestas[i].eleccion;
+            string rutaDecisiones = bancoDecisiones[i].ruta;
+
+            if (rutaDecisiones == rutaActual)
+            {
+                decisionActual = bancoDecisiones[i].preguntas[0];
+
+                enunciado.text = decisionActual.enunciado;
+                for (int r = 0; r < elecciones.Length; r++)
+                {
+                    elecciones[r].text = decisionActual.elecciones[r].eleccion;
+                    if (elecciones[0].text == "Menú de inicio")
+                    {
+                        final = true;
+                    }
+                }
+            }
+        }
+    }
+
+    public void proximaRuta(int respuestaJugador)
+    {
+        if (respuestaJugador == 1 && !final)
+        {
+            rutaActual += "-1";
+            setDecision();
+        }
+        else if (respuestaJugador == 2 && !final)
+        {
+            rutaActual += "-2";
+            setDecision();
+        }
+        else if (respuestaJugador == 1 && final)
+        {
+            SceneManager.LoadScene("MenuInicio");
+        }
+        else if (respuestaJugador == 2 && final)
+        {
+            SceneManager.LoadScene("Creditos");
         }
     }
 

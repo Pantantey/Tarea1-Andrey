@@ -5,6 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class Ruta
 {
-    public string nombreRuta;
+    public string ruta;
     public Decision[] preguntas;
 }
