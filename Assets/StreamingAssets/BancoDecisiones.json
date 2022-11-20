@@ -3,10 +3,18 @@
     "ruta": "1",
     "preguntas": [
       {
-        "enunciado": "¿Enunciado ruta 1?",
+        "enunciado": "-¿Eh?, ¿Que sucede?
+No puedo ver nada, lo último que recuerdo es que ayer jugué
+videojuegos durante todo el día y por la noche fui por una hamburguesa,
+luego, un extraño me pidió una dirección y como agradecimiento por
+ayudarlo me regaló un chocolate. Después de eso me dió sueño,
+entonces me apuré a llegar a casa y me acosté a dormir.
+¿Qué puedo hacer ahora?",
         "elecciones": [
-          { "eleccion": "ruta 1-1" },
-          { "eleccion": "ruta 1-2" }
+          { "eleccion": "Levantarse" },
+          { "eleccion": "Seguir acostado" },
+	  { "eleccion": "(¿Qué hace el tipo de ayer frente 
+a mi cuarto?)" }
         ],
       }
     ]
@@ -15,10 +23,18 @@
     "ruta": "1-1",
     "preguntas": [
       {
-        "enunciado": "¿Enunciado ruta 1-1?",
+        "enunciado": 
+"-Recuerdo que alquilo esta casa junto a mi compañero de 
+la U, él vive en la habitación del frente, puedo ir y preguntarle si 
+me puede ayudar, llevandome a un hospital o si puede llamar a alguien
+que me revise y me puedan dar alguna solución o puedo bajar las 
+escaleras y salir de la casa, puede ser que la luz del sol me ayude
+y pueda ver algo.",
         "elecciones": [
-          { "eleccion": "ruta 1-1-1" },
-          { "eleccion": "ruta 1-1-2" }
+          { "eleccion": "Ir donde mi compa" },
+          { "eleccion": "Bajar la escalera" },
+	  { "eleccion": "(¿Eso es sangre? ¡Vete!
+¿Porqué me estas viendo fijamente?)" }
         ],
       }
     ]
@@ -27,10 +43,20 @@
     "ruta": "1-1-1",
     "preguntas": [
       {
-        "enunciado": "¿Enunciado ruta 1-1-1?",
+        "enunciado": 
+"(Salí de mi habitación, rumbo a la de mi compañero)
+-Que difícil es caminar a ciegas, no se que voy a hacer si mi vista
+no mejora. Son solamente como 20 pasos, pero, sin ver siento que me
+puedo tropezar en cualquier momento. 
+17... 18... 19... listo!
+Ya puedo sentir la puerta de la habitación de mi compañero",
         "elecciones": [
-          { "eleccion": "ruta 1-1-1-1" },
-          { "eleccion": "ruta 1-1-1-2" }
+          { "eleccion": "Tocar puerta" },
+          { "eleccion": "Volver a mi habitación" },
+	  { "eleccion": "(¡Qué miedo! ¡deja de verme!
+¿Eh? La puerta de mi compañero está
+un poco abierta... Y él está
+muerto en el suelo)" }
         ],
       }
     ]
@@ -39,10 +65,20 @@
     "ruta": "1-1-2",
     "preguntas": [
       {
-        "enunciado": "¿Enunciado ruta 1-1-2?",
+        "enunciado": 
+"(Empiezo a salir del cuarto intentando no tropezarme, paso frente
+la habitación de mi compañero y paso directo rumbo a la escalera)
+-El camino hasta la escalera nunca se me habia hecho tan largo,
+siento que podria caerme por error en cualquier momento jaja.
+¡Por fin llegué a la escalera!.
+(Suena un grito aterrador, como si mi compañero estuviera muriendo)",
         "elecciones": [
-          { "eleccion": "ruta 1-1-2-1" },
-          { "eleccion": "ruta 1-1-2-2" }
+          { "eleccion": "Bajar Lento" },
+          { "eleccion": "Bajar Rápido" },
+	  { "eleccion": "(Pasando por la habitación
+de mi amigo veo que
+está muerto, ocupo
+salir rapido de aquí.)" }
         ],
       }
     ]
@@ -51,10 +87,19 @@
     "ruta": "1-2",
     "preguntas": [
       {
-        "enunciado": "¿Enunciado ruta 1-2?",
+        "enunciado": "80963, 80964, 80965, 80966...
+-Aaaaa, me aburro, he estado contando para matar el tiempo ya que no
+puedo ver, pero, ya no lo soporto más, aunque no tengo nada que hacer
+me estoy cansando de esto. ¿Será que mi compañero de la U, con quién
+estoy alquilando esta casa, estará aquí? podría gritar y ver si
+viene a ayudarme, puede que sepa que me sucedió en los ojos.",
         "elecciones": [
-          { "eleccion": "ruta 1-2-1" },
-          { "eleccion": "ruta 1-2-2" }
+          { "eleccion": "Gritar" },
+          { "eleccion": "Seguir contando" },
+	  { "eleccion": "(¿Eso es sangre?
+Talvez si me quedo acostado
+finjiendo que no puedo ver, ese
+tipo me deje en paz y se vaya)" }
         ],
       }
     ]
@@ -63,10 +108,19 @@
     "ruta": "1-2-1",
     "preguntas": [
       {
-        "enunciado": "¿Enunciado ruta 1-2-1?",
+        "enunciado": 
+"¡AYUDAAAA!
+¡¿HAY ALGUIEN POR AQUÍ CERCA?!
+¡OCUPO AYUDA! ¡NO PUEDO VER!
+¡ESTOY ABURIDOOOOO!!!
+(Escucho pasos acercandose de la puerta a mi cama)",
         "elecciones": [
-          { "eleccion": "ruta 1-2-1-1" },
-          { "eleccion": "ruta 1-2-1-2" }
+          { "eleccion": "Pedir mi telefono" },
+          { "eleccion": "Fingir que no lo escuché" },
+	  { "eleccion": "(Ese tipo, viene hacia mi.
+Tengo demasiado miedo
+No sé, ¿qué se supone
+que debo hacer?)" }
         ],
       }
     ]
@@ -75,10 +129,22 @@
     "ruta": "1-2-2",
     "preguntas": [
       {
-        "enunciado": "¿Enunciado ruta 1-2-2?",
+        "enunciado": 
+"Bueno, continuaré...
+80967, 80968, 80969, 80970, 80971, 80972, 80973, 80974, 80975,
+80976, 80977, 80978, 80979, 80980, 80981, 80982, 80983, 80984,
+80985, 80986, 80987, 80988, 80989, 80990, 80991, 80992, 80993,
+80994, 80995, 80996, 80997, 80998, 80999, 81000, 81001, 81002,
+81003, 81004, 81005, 81006, 81007, 81008, 81009, 81010, 81011...
+Ya me estoy cansando..",
         "elecciones": [
-          { "eleccion": "ruta 1-2-2-1" },
-          { "eleccion": "ruta 1-2-2-2" }
+          { "eleccion": "Seguir Contando" },
+          { "eleccion": "Dormir" },
+	  { "eleccion": "(Deja de ver como cuento,
+dejame solo. ¿Si sigo contando
+te vas a aburrir y te irás?
+¿Existe una forma de hacer que
+te vayas?)" }
         ],
       }
     ]
@@ -87,10 +153,21 @@
     "ruta": "1-1-1-1",
     "preguntas": [
       {
-        "enunciado": "¿Final de la ruta 1-1-1-1?",
+        "enunciado": 
+"(Toco la puerta y me doy cuenta que estaba solo empujada)
+-Que extraño que mi compañero dejara la puerta abierta, por lo
+general siempre está encerrado en su habitación.
+¿Estás aquí?, ocupo tu ayuda
+(estro a la habitación y siento algo mojado a mis pies)
+¿Hola? se te cayó el fresco y mojaste todo el suelo.
+¿eh? ¿te caiste?
+(Me golpean por la espalda y muero)  FIN",
 	"elecciones": [
           { "eleccion": "Menú de inicio" },
-          { "eleccion": "Créditos" }
+          { "eleccion": "Créditos" },
+	  { "eleccion": "(NOOO!
+Amigo mio, ¿como hago para 
+salir de esta?)" }
         ],
       }
     ]
@@ -99,10 +176,19 @@
     "ruta": "1-1-1-2",
     "preguntas": [
       {
-        "enunciado": "¿Final de la ruta 1-1-1-2?",
+        "enunciado": 
+"(Camino de vuelta a mi habitación)
+-La verdad es que no me gusta molestar a mi compañero con estas
+pequeñeses, igual si me quedé ciego después de dormir, es
+probable que si me vuelvo a dormir me cure o esto solo sea
+una pesadilla
+-Desconocido: ¿Pesadilla?
+(Intento correr pero me apuñalan por la espalda y muero) FIN",
 	"elecciones": [
           { "eleccion": "Menú de inicio" },
-          { "eleccion": "Créditos" }
+          { "eleccion": "Créditos" },
+	  { "eleccion": "(¡Estás enfermo! 
+¡Deja de reirte!)" }
         ],
       }
     ]
@@ -111,10 +197,22 @@
     "ruta": "1-1-2-1",
     "preguntas": [
       {
-        "enunciado": "¿Final de la ruta 1-1-2-1?",
+        "enunciado": 
+"-Mi compañero es muy extraño, le gusta ver esas películas de
+terror con todo el volumen en el televisor. Tengo que bajar
+cuidadosamente para evitar caerme. Por suerte la puerta para
+salir de la casa está justo al terminar de bajar la escaleras.
+(Abro la puerta y salgo)
+Que triste, creo que ya salí de casa y sigo sin ver, por
+suerte mi primo también es mi vecino, voy a hablarle
+(Me alejo un poco de la casa y salgo corriendo en busca de
+ayuda) -Que miedo ese tipo. FIN",
 	"elecciones": [
           { "eleccion": "Menú de inicio" },
-          { "eleccion": "Créditos" }
+          { "eleccion": "Créditos" },
+	  { "eleccion": "(No vengas, no vengas
+no vengas, no vengas, no, no
+nononononoononono)" }
         ],
       }
     ]
@@ -123,10 +221,20 @@
     "ruta": "1-1-2-2",
     "preguntas": [
       {
-        "enunciado": "¿Final de la ruta 1-1-2-2?",
+        "enunciado": 
+"-¡No puede ser! Ocupo salir corriendo de aquí
+Están matando a mi compañero y no hay nada que pueda hacer
+(Empiezo a bajar rápidamente la escalera, tropiezo y no me
+puedo levantar de tanto miedo que tengo, mientras escucho
+pasos acercandose)
+No por favor, no le diré a nadie lo que hiciste
+(Me apuñalan y muero) FIN",
 	"elecciones": [
           { "eleccion": "Menú de inicio" },
-          { "eleccion": "Créditos" }
+          { "eleccion": "Créditos" },
+	  { "eleccion": "(Me duelen demasiado mis
+pies, dejame vivir. VETE
+AAAAAAAAAAAAAAAAAAAAAA)" }
         ],
       }
     ]
@@ -135,10 +243,19 @@
     "ruta": "1-2-1-1",
     "preguntas": [
       {
-        "enunciado": "¿Final de la ruta 1-2-1-1?",
+        "enunciado": 
+"Hola! 
+¿-Me puedes prestar tu teléfono? 
+Tengo dificultades para ver, por suerte estás aquí
+¿hola?
+¿Porqué no me a...
+(Me golpean y muero) FIN",
 	"elecciones": [
           { "eleccion": "Menú de inicio" },
-          { "eleccion": "Créditos" }
+          { "eleccion": "Créditos" },
+	  { "eleccion": "(Espero que me dejes usar
+el teléfono, no me hagas
+daño, no lo hagas.)" }
         ],
       }
     ]
@@ -147,10 +264,21 @@
     "ruta": "1-2-1-2",
     "preguntas": [
       {
-        "enunciado": "¿Final de la ruta 1-2-1-2?",
+        "enunciado": 
+"-¡¿ALGUIEN ESTÁ POR AQUÍ QUE ME PUEDA AYUDAR?!
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAA
+AAAAAAA
+-Desconocido: Callate de una vez.
+(Me apuñalan y muero) FIN",
 	"elecciones": [
           { "eleccion": "Menú de inicio" },
-          { "eleccion": "Créditos" }
+          { "eleccion": "Créditos" },
+	  { "eleccion": "(Espero que piense que no
+sé que está frente a mi y
+se vaya. Baja el cuchillo,
+no quiero que te acerques.)" }
         ],
       }
     ]
@@ -159,10 +287,21 @@
     "ruta": "1-2-2-1",
     "preguntas": [
       {
-        "enunciado": "¿Final de la ruta 1-2-2-1?",
+        "enunciado": 
+"81012, 81013, 81014, 81015, 81016, 81017, 81018, 81019, 81020,
+81021, 81022, 81023, 81024, 81025, 81026, 81027, 81028, 81029,
+81030, 81031, 81032, 81033, 81034, 81035, 81036, 81037, 81038,
+81039, 81040, 81041, 81042, 81043, 81044, 81045, 81046, 81047,
+81048, 81049, 81050, 81 05 1...  8 1 0 5 2..
+-No...  No quiero irme aún.. 
+(Me golpean y muero) FIN",
 	"elecciones": [
           { "eleccion": "Menú de inicio" },
-          { "eleccion": "Créditos" }
+          { "eleccion": "Créditos" },
+	  { "eleccion": "(Desgraciado, solo estoy
+contando e igual no me
+dejaste vivir, espero
+que alguien te delate..)" }
         ],
       }
     ]
@@ -171,10 +310,21 @@
     "ruta": "1-2-2-2",
     "preguntas": [
       {
-        "enunciado": "¿Final de la ruta 1-2-2-2?",
+        "enunciado": 
+"-Me siento cansado..
+Es momento de cerrar los ojos y dormir un rato.
+(Me tapo completamente con la cobija)
+-Tengo hambre, que ganas de despertarme en un rato e ir a
+comprarme otra hamburguesa tan buena como la de ayer.
+(Me golpean y muero) FIN",
 	"elecciones": [
           { "eleccion": "Menú de inicio" },
-          { "eleccion": "Créditos" }
+          { "eleccion": "Créditos" },
+	  { "eleccion": "(Si me tapo con la cobija
+los monstruos no me pueden
+atacar, ¿eres un monstruo no? 
+confío en que tú tampoco
+podrás.)" }
         ],
       }
     ]

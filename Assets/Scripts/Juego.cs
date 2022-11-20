@@ -6,29 +6,52 @@ using UnityEngine.UI;
 using System.IO;
 using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
+using System;
 
 public class Juego : MonoBehaviour
 {
     public Ruta[] bancoDecisiones;
     public TextMeshProUGUI enunciado;
     public TextMeshProUGUI[] elecciones;
-    
+
+    public Button titulo;
+    public Button borrar;
+
     public Decision decisionActual;
     public Button[] btnEleccion;
 
     public string rutaActual;
-    public bool final;
+    public bool final = false;
+    public bool revelar = false;
+    public bool juego = false;
 
+    private string revelarPrefsName = "revelo";
+
+    private void Awake()
+    {
+        LoadData();
+    }
     // Start is called before the first frame update
     void Start()
     {
-        final = false;
-        rutaActual = "1";
-        cargarBancoDecisiones();
-        setDecision();
+        if (juego)
+        {
+            rutaActual = "1";
+            cargarBancoDecisiones();
+            setDecision();
+        }
+        laVerdad();
     }
 
+    private void Update()
+    {
+        revelacion();
+    }
 
+    private void OnDestroy()
+    {
+        SaveData();
+    }
 
     public void cargarBancoDecisiones()
     {
@@ -59,12 +82,43 @@ public class Juego : MonoBehaviour
                 for (int r = 0; r < elecciones.Length; r++)
                 {
                     elecciones[r].text = decisionActual.elecciones[r].eleccion;
+                    if (!revelar)
+                    {
+                        elecciones[2].text = "";
+                    }
                     if (elecciones[0].text == "Menú de inicio")
                     {
                         final = true;
                     }
                 }
             }
+        }
+    }
+
+    public void reiniciar()
+    {
+        revelar = false;
+    }
+
+    public void revelacion()
+    {
+        if (rutaActual == "1-1-2-1" && !revelar)
+        {
+            revelar = true;
+        }
+    }
+
+    public void laVerdad()
+    {
+        if (!juego && revelar)
+        {
+            titulo.gameObject.SetActive(true);
+            borrar.gameObject.SetActive(true);
+        }
+        if (!juego && !revelar)
+        {
+            titulo.gameObject.SetActive(false);
+            borrar.gameObject.SetActive(false);
         }
     }
 
@@ -88,6 +142,15 @@ public class Juego : MonoBehaviour
         {
             SceneManager.LoadScene("Creditos");
         }
+    }
+
+    private void SaveData()
+    {
+        PlayerPrefs.SetInt(revelarPrefsName, Convert.ToInt32(revelar));
+    }
+    private void LoadData()
+    {
+        revelar = Convert.ToBoolean(PlayerPrefs.GetInt(revelarPrefsName));
     }
 
 }
